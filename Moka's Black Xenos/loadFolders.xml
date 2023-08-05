@@ -1,0 +1,21 @@
+<loadFolders>
+	
+	<v1.4>
+		<li>/</li>
+		<li>1.4</li>
+		<li IfModActive="Rooboid.DreadlockHairsHD">Mods/Hairs/RooDreads</li>	
+		<li IfModActive="Rooboid.GlasseshairHD">Mods/Hairs/RooGlasses</li>
+		<li IfModActive="Rooboid.AccessoryHairsHD">Mods/Hairs/RooAccess</li>	
+		<li IfModActive="Rooboid.RoyalhairHD">Mods/Hairs/RooRoyal</li>
+		<li IfModActive="Rooboid.RoyalhairKoFi">Mods/Hairs/RooRoyalKofi</li>
+		<li IfModActive="Rooboid.GlasseshairKoFi">Mods/Hairs/RooGlassesKofi</li>
+		<li IfModActive="vanillaracesexpanded.waster">Mods/Xenos/VREWasters</li>
+		<li IfModActive="vanillaracesexpanded.highmate">Mods/Xenos/VREHighmates</li>
+		<li IfModActive="vanillaracesexpanded.phytokin">Mods/Xenos/VREPhytokin</li>
+		<li IfModActive="vanillaracesexpanded.sanguophage">Mods/Xenos/VRESanguophages</li>
+		<li IfModActive="Seti.Victor.AnimaBodies">Mods/AnimaBionics</li>
+		<li IfModActive="xrushha.AnimaGear">Mods/AnimaGear</li>
+		<li IfModActive="sarg.alphamechs">Mods/AlphaMechs</li>
+		
+	</v1.4>
+</loadFolders>

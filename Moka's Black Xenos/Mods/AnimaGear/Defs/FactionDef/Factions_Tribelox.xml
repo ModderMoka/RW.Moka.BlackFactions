@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Tribal -->
+
+  <FactionDef ParentName="LoxTribeBase">
+    <defName>TribePsyLox</defName>
+    <label>psy lox tribe</label>
+    <naturalEnemy>true</naturalEnemy>
+    <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally, and their Psy abilities make them a more difficult challenge.</description>
+    <factionIconPath>World/WorldObjects/PsyLoxVillage</factionIconPath>
+    <colorSpectrum>
+      <li>(0.3, 0.69, 0.31)</li>
+      <li>(0.65, 0.84, 0.65)</li>
+    </colorSpectrum>
+    <xenotypeSet>
+      <xenotypeChances>
+        <VRE_Animakin MayRequire="vanillaracesexpanded.phytokin">0.005</VRE_Animakin>
+      </xenotypeChances>
+    </xenotypeSet>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+		</requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+    <caravanTraderKinds>
+      <li>Caravan_Psy_ShamanMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_PsyNeolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>PsyLox_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribelox_Warrior>5</Tribelox_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribelox_Hunter>10</Tribelox_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribelox_ChiefRanged>3</Tribelox_ChiefRanged>
+          <Tribelox_ChiefMelee>1.5</Tribelox_ChiefMelee>
+          <Tribal_Caster_Wildspeaker MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Wildspeaker>
+          <Tribal_Caster_Conflagrator MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Conflagrator>
+          <Tribal_Caster_Frostshaper MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Frostshaper>
+          <Tribal_Caster_Staticlord MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Staticlord>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribelox_Hunter>10</Tribelox_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribelox_ChiefRanged>5</Tribelox_ChiefRanged>
+          <Tribal_Caster_Wildspeaker MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Wildspeaker>
+          <Tribal_Caster_Conflagrator MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Conflagrator>
+          <Tribal_Caster_Frostshaper MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Frostshaper>
+          <Tribal_Caster_Staticlord MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Staticlord>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Tribal_Penitent>10</Tribal_Penitent>
+          <Tribelox_Warrior>10</Tribelox_Warrior>
+          <Tribal_Berserker>10</Tribal_Berserker>
+          <Tribelox_ChiefMelee>5</Tribelox_ChiefMelee>
+          <Tribal_Caster_Wildspeaker MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Wildspeaker>
+          <Tribal_Caster_Conflagrator MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Conflagrator>
+          <Tribal_Caster_Frostshaper MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Frostshaper>
+          <Tribal_Caster_Staticlord MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Staticlord>
+      </options>
+      </li>
+      <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <Tribal_Breacher>5</Tribal_Breacher>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribelox_Warrior>5</Tribelox_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribelox_Hunter>10</Tribelox_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribelox_ChiefRanged>3</Tribelox_ChiefRanged>
+          <Tribelox_ChiefMelee>1.5</Tribelox_ChiefMelee>
+          <Tribal_Caster_Wildspeaker MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Wildspeaker>
+          <Tribal_Caster_Conflagrator MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Conflagrator>
+          <Tribal_Caster_Frostshaper MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Frostshaper>
+          <Tribal_Caster_Staticlord MayRequire="VanillaExpanded.VPsycastsE">0.1</Tribal_Caster_Staticlord>
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Tribelox_Warrior>20</Tribelox_Warrior>
+          <Tribal_Child MayRequire="Ludeon.RimWorld.Biotech">10</Tribal_Child>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribelox_Hunter>10</Tribelox_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribelox_ChiefRanged>3</Tribelox_ChiefRanged>
+          <Tribelox_ChiefMelee>1.5</Tribelox_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Tribelox_Trader>1</Tribelox_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <Tribelox_Warrior>7</Tribelox_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribelox_Hunter>10</Tribelox_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_Berserker>7</Tribal_Berserker>
+          <Tribelox_ChiefRanged>10</Tribelox_ChiefRanged>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Tribelox_Warrior>7</Tribelox_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribelox_Hunter>10</Tribelox_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_Berserker>7</Tribal_Berserker>
+          <Tribelox_ChiefRanged>10</Tribelox_ChiefRanged>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribelox_Hunter>10</Tribelox_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribelox_ChiefRanged>10</Tribelox_ChiefRanged>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Miner>1</Tribal_Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Hunter>1</Tribal_Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Logger>1</Tribal_Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Farmer>1</Tribal_Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+<!-- Tribal -->
+
+</Defs>

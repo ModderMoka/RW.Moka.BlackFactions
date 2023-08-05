@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="TribeloxBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>TribeCivilLox</defaultFactionType>
+    <maxGenerationAge>60</maxGenerationAge>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>150~600</techHediffsMoney>
+    <techHediffsTags>
+      <li MayRequire="Seti.Victor.AnimaBodies">AnimaBody</li>
+    </techHediffsTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TribeloxBase">
+      <defName>Tribelox_Leader</defName>
+      <label>cheiflox</label>
+      <labelPlural>cheiflox</labelPlural>
+      <factionLeader>true</factionLeader>
+      <minGenerationAge>30</minGenerationAge>
+      <isFighter>false</isFighter>
+      <gearHealthRange>1~1</gearHealthRange>
+      <itemQuality>Good</itemQuality>
+      <combatPower>20</combatPower>
+      <apparelMoney>400~800</apparelMoney>
+      <requiredWorkTags>
+          <li>Social</li>
+          <li>Intellectual</li>
+      </requiredWorkTags>
+      <useFactionXenotypes>false</useFactionXenotypes>
+      <xenotypeSet>
+        <xenotypeChances>
+          <Moka_Deivos>999</Moka_Deivos>
+        </xenotypeChances>
+      </xenotypeSet>
+      <initialWillRange>3~5</initialWillRange>
+      <initialResistanceRange>7~11</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Mid tier - warrior, breacher, hunter, trader -->
+  
+  <PawnKindDef ParentName="TribeloxBase">
+    <defName>Tribelox_Warrior</defName>
+    <label>warrior</label>
+    <combatPower>50</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarVeil</li>
+    </apparelRequired>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Moka_Clawth>1</Moka_Clawth>
+      </xenotypeChances>
+    </xenotypeSet>
+    <weaponMoney>150~150</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~9</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TribeloxBase" Name="Tribelox_Hunter">
+    <defName>Tribelox_Hunter</defName>
+    <label>hunter</label>
+    <combatPower>60</combatPower>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+          <li>Tribal</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>TribalHunter</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarVeil</li>
+    </apparelRequired>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Moka_Faunal>1</Moka_Faunal>
+      </xenotypeChances>
+    </xenotypeSet>
+    <weaponMoney>100~100</weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedDecent</li>
+    </weaponTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>10~16</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="Tribelox_Hunter">
+    <defName>Tribelox_Trader</defName>
+    <label>trader</label>
+    <trader>true</trader>
+    <apparelRequired Inherit="False">
+      <li>Apparel_TribalHeaddress</li>
+    </apparelRequired>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>9~15</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="TribalChiefBase">
+    <defName>Tribelox_ChiefMelee</defName>
+    <label>berserker chief</label>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <techHediffsChance>0.8</techHediffsChance>
+    <techHediffsMoney>400~600</techHediffsMoney>
+    <techHediffsTags>
+      <li MayRequire="Seti.Victor.AnimaBodies">AnimaBody</li>
+    </techHediffsTags>
+    <initialResistanceRange>38~58</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="TribalChiefBase">
+    <defName>Tribelox_ChiefRanged</defName>
+    <label>archer chief</label>
+    <weaponTags>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <techHediffsChance>0.8</techHediffsChance>
+    <techHediffsMoney>400~600</techHediffsMoney>
+    <techHediffsTags>
+      <li MayRequire="Seti.Victor.AnimaBodies">AnimaBody</li>
+    </techHediffsTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <initialResistanceRange>16~26</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TribeloxBase">
+    <defName>Tribelox_Miner</defName>
+    <label>miner</label>
+    <combatPower>35</combatPower>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+          <li>Tribal</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>TribalMiner</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>180~350</apparelMoney>
+    <weaponMoney>80~80</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.03</techHediffsChance>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>17~27</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Loggers -->
+  <PawnKindDef ParentName="TribeloxBase">
+    <defName>Tribelox_Logger</defName>
+    <label>logger</label>
+    <combatPower>40</combatPower>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+          <li>Tribal</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>TribalLogger</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>180~350</apparelMoney>
+    <weaponMoney>80~80</weaponMoney>
+    <apparelRequired>
+      <li>Apparel_Shadecone</li>
+    </apparelRequired>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Moka_Florakin>1</Moka_Florakin>
+      </xenotypeChances>
+    </xenotypeSet>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.03</techHediffsChance>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>17~27</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Farmer -->
+  <PawnKindDef ParentName="TribeloxBase">
+    <defName>Tribelox_Farmer</defName>
+    <label>farmer</label>
+    <combatPower>35</combatPower>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+          <li>Tribal</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>TribalFarmer</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>180~350</apparelMoney>
+    <weaponMoney>80~80</weaponMoney>
+    <apparelRequired>
+      <li>Apparel_Shadecone</li>
+    </apparelRequired>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Moka_Florakin>1</Moka_Florakin>
+      </xenotypeChances>
+    </xenotypeSet>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.03</techHediffsChance>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>17~27</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>

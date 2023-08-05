@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeDef>
+		<defName>Moka_Basenegro</defName>
+		<label>basenegro</label>
+		<description>Racism is no new feat to residents of the Rim. This far out on the Rim, a number of melanated Baseliners allied to protect themselves which gave birth to a new set of Baseliners from which other Xenotypes then sstemmed from and added to.</description>
+		<descriptionShort>The roots of Basenegro isolation are long forgotten, but regardless they tend to live apart from other pawns.</descriptionShort>
+		<iconPath>UI/Xenotypes/BasenegroIcon</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Hair_Moka_AfroTexture</li>
+			
+			<li>Moka_Brown</li>
+			<li>Moka_Caramel</li>
+			<li>Moka_Chestnut</li>
+			<li>Moka_Coconut</li>
+			<li>Moka_Dark_Gold</li>
+			<li>Moka_Light_Brown</li>
+			<li>Moka_Peach</li>
+			<li>Moka_Sunrise</li>
+			<li>Moka_Tanned</li>
+			<li>Moka_Yellowish_Brown</li>
+			<li>Moka_Bole</li>
+			<li>Moka_Brown_Coffee</li>
+			<li>Moka_Burnt_Brown</li>
+			<li>Moka_Burnt_Umber</li>
+			<li>Moka_Dark_Brown</li>
+			<li>Moka_Dark_Olive</li>
+			<li>Moka_Liver_Brown</li>
+			<li>Moka_Reddish_Brown</li>
+			<li>Moka_Dark_Reddish_Brown</li>
+			<li>Moka_Royal_Brown</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Moka_Faunal</defName>
+		<label>faunal</label>
+		<description>Racism is no new feat to residents of the Rim. This far out on the Rim, a number of melanated Baseliners allied to protect themselves which gave birth to a new set of Baseliners from which other Xenotypes then sstemmed from and added to.</description>
+		<descriptionShort>The roots of Basenegro isolation are long forgotten, but regardless they tend to live apart from other pawns.</descriptionShort>
+		<iconPath>UI/Xenotypes/FaunalIcon</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.5</combatPowerFactor>
+		<genes>
+			<li>AnimalWarcall</li>
+			<li>MoveSpeed_Quick</li>
+			<li>NakedSpeed</li>
+			<li>Aggression_Aggressive</li>
+			<li>KindInstinct</li>
+			<li>Sleepy</li>
+			<li>Libido_High</li>
+			
+			<li MayRequire="Rooboid.Minotaur">RBM_BovineTemper</li>
+			<li MayRequire="Rooboid.Minotaur">RBM_PeriodicLactation</li>
+			<li MayRequire="Rooboid.Minotaur">RBM_EstrousCycle</li>
+			<li MayRequire="Rooboid.Minotaur">RBM_UnguligradeLegs</li>
+
+			<li MayRequire="Rooboid.Satyr">RBSF_HorizontalPupils</li>
+			<li MayRequire="Rooboid.Satyr">RBSF_GoatHorns</li>
+
+			<li>Hair_Moka_AfroTexture</li>
+			<li>Beard_BushyOnly</li>
+			<li>Beard_Always</li>
+			<li>Body_Standard</li>
+			<li>Body_Hulk</li>
+			<li>Moka_Brown</li>
+			<li>Moka_Caramel</li>
+			<li>Moka_Chestnut</li>
+			<li>Moka_Coconut</li>
+			<li>Moka_Dark_Gold</li>
+			<li>Moka_Light_Brown</li>
+			<li>Moka_Peach</li>
+			<li>Moka_Sunrise</li>
+			<li>Moka_Tanned</li>
+			<li>Moka_Yellowish_Brown</li>
+			<li>Moka_Bole</li>
+			<li>Moka_Brown_Coffee</li>
+			<li>Moka_Burnt_Brown</li>
+			<li>Moka_Burnt_Umber</li>
+			<li>Moka_Dark_Brown</li>
+			<li>Moka_Dark_Olive</li>
+			<li>Moka_Liver_Brown</li>
+			<li>Moka_Reddish_Brown</li>
+			<li>Moka_Dark_Reddish_Brown</li>
+			<li>Moka_Royal_Brown</li>
+			<li>StrongStomach</li>
+			<li>Learning_Slow</li>
+			<li>Tail_Smooth</li>
+			<li>AptitudeTerrible_Mining</li>
+			<li>AptitudeRemarkable_Animals</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Moka_Clawth</defName>
+		<label>clawth</label>
+		<description>Racism is no new feat to residents of the Rim. This far out on the Rim, a number of melanated Baseliners allied to protect themselves which gave birth to a new set of Baseliners from which other Xenotypes then sstemmed from and added to.</description>
+		<descriptionShort>The roots of Basenegro isolation are long forgotten, but regardless they tend to live apart from other pawns.</descriptionShort>
+		<iconPath>UI/Xenotypes/ClawthIcon</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>3</combatPowerFactor>
+		<genes>
+			<li>MoveSpeed_Quick</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Beauty_Ugly</li>
+			<li>Hair_Moka_AfroTexture</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Body_Standard</li>
+			<li>Body_Hulk</li>
+			<li>Hair_SnowWhite</li>
+			<li>Hair_LightTeal</li>
+			<li>Hair_LightGreen</li>
+			<li>Hair_Pink</li>
+			<li>Hair_LightPurple</li>
+			<li>Hair_BrightRed</li>
+			<li>Moka_Brown</li>
+			<li>Moka_Caramel</li>
+			<li>Moka_Chestnut</li>
+			<li>Moka_Coconut</li>
+			<li>Moka_Dark_Gold</li>
+			<li>Moka_Light_Brown</li>
+			<li>Moka_Peach</li>
+			<li>Moka_Sunrise</li>
+			<li>Moka_Tanned</li>
+			<li>Moka_Yellowish_Brown</li>
+			<li>Moka_Bole</li>
+			<li>Moka_Brown_Coffee</li>
+			<li>Moka_Burnt_Brown</li>
+			<li>Moka_Burnt_Umber</li>
+			<li>Moka_Dark_Brown</li>
+			<li>Moka_Dark_Olive</li>
+			<li>Moka_Liver_Brown</li>
+			<li>Moka_Reddish_Brown</li>
+			<li>Moka_Dark_Reddish_Brown</li>
+			<li>Moka_Royal_Brown</li>
+			
+			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_Talons</li>			
+			<li MayRequire="vanillaracesexpanded.hussar">VREH_Arrogant</li>
+
+			<li>AptitudeRemarkable_Melee</li>
+			<li>AptitudeTerrible_Mining</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Moka_Deivos</defName>
+		<label>deivos</label>
+		<description>Racism is no new feat to residents of the Rim. This far out on the Rim, a number of melanated Baseliners allied to protect themselves which gave birth to a new set of Baseliners from which other Xenotypes then sstemmed from and added to.</description>
+		<descriptionShort>The roots of Basenegro isolation are long forgotten, but regardless they tend to live apart from other pawns.</descriptionShort>
+		<iconPath>UI/Xenotypes/DeivosIcon</iconPath>
+		<combatPowerFactor>0.5</combatPowerFactor>
+		<genes>
+			<li>Ageless</li>
+			<li>ArchiteMetabolism</li>
+			<li>Deathless</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<li>PsychicAbility_Enhanced</li>
+			<li>PsychicBonding</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Libido_High</li>
+			<li>Mood_Sanguine</li>
+
+			<li>Beauty_Beautiful</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>Hair_SnowWhite</li>
+			<li>Hair_LightTeal</li>
+			<li>Hair_LightPurple</li>
+			<li>Moka_Brown</li>
+			<li>Moka_Caramel</li>
+			<li>Moka_Chestnut</li>
+			<li>Moka_Coconut</li>
+			<li>Moka_Dark_Gold</li>
+			<li>Moka_Light_Brown</li>
+			<li>Moka_Peach</li>
+			<li>Moka_Sunrise</li>
+			<li>Moka_Tanned</li>
+			<li>Moka_Yellowish_Brown</li>
+			<li>Moka_Bole</li>
+			<li>Moka_Brown_Coffee</li>
+			<li>Moka_Burnt_Brown</li>
+			<li>Moka_Burnt_Umber</li>
+			<li>Moka_Dark_Brown</li>
+			<li>Moka_Dark_Olive</li>
+			<li>Moka_Liver_Brown</li>
+			<li>Moka_Reddish_Brown</li>
+			<li>Moka_Dark_Reddish_Brown</li>
+			<li>Moka_Royal_Brown</li>
+			<li>Hair_Grayless</li>
+			<li>AptitudeTerrible_Mining</li>
+			<li>AptitudeRemarkable_Social</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Moka_Toxcurl</defName>
+		<label>toxcurl</label>
+		<description>idk buddy, I'm barely holding on here</description>
+		<iconPath>UI/Xenotypes/BasenegroIcon</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>2</combatPowerFactor>
+		<genes>
+			<li>Immunity_Strong</li>
+			<li>ToxicEnvironmentResistance_Total</li>
+			<li>Aggression_Aggressive</li>
+			<li>Beauty_Ugly</li>
+			<li>Hair_Moka_AfroTexture</li>
+			<li>Head_Gaunt</li>
+			<li>Hair_Gray</li>
+			<li>Moka_Brown</li>
+			<li>Moka_Caramel</li>
+			<li>Moka_Chestnut</li>
+			<li>Moka_Coconut</li>
+			<li>Moka_Dark_Gold</li>
+			<li>Moka_Light_Brown</li>
+			<li>Moka_Peach</li>
+			<li>Moka_Sunrise</li>
+			<li>Moka_Tanned</li>
+			<li>Moka_Yellowish_Brown</li>
+			<li>Moka_Bole</li>
+			<li>Moka_Brown_Coffee</li>
+			<li>Moka_Burnt_Brown</li>
+			<li>Moka_Burnt_Umber</li>
+			<li>Moka_Dark_Brown</li>
+			<li>Moka_Dark_Olive</li>
+			<li>Moka_Liver_Brown</li>
+			<li>Moka_Reddish_Brown</li>
+			<li>Moka_Dark_Reddish_Brown</li>
+			<li>Moka_Royal_Brown</li>
+			<li>AptitudeTerrible_Construction</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeRemarkable_Medicine</li>
+			<li>ChemicalDependency_Psychite</li>
+			<li>AddictionImmune_WakeUp</li>
+		</genes>
+
+	</XenotypeDef>
+
+</Defs>

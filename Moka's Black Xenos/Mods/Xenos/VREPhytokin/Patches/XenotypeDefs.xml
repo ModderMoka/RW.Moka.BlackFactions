@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="VRE_Poluxkin"]/genes</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="VRE_Poluxkin"]/genes</xpath>
+			<value>
+				<li MayRequire="Rooboid.Faun">RBSF_NaturalConnection</li>
+				<li>FireWeakness</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>/Defs/XenotypeDef[defName="VRE_Gauranlenkin"]/genes</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/XenotypeDef[defName="VRE_Gauranlenkin"]/genes</xpath>
+				<value>
+					<li MayRequire="Rooboid.Faun">RBSF_NaturalConnection</li>
+					<li>FireWeakness</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+		
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>/Defs/XenotypeDef[defName="VRE_Animakin"]/genes</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/XenotypeDef[defName="VRE_Animakin"]/genes</xpath>
+				<value>
+					<li MayRequire="Rooboid.Faun">RBSF_NaturalConnection</li>
+					<li>FireWeakness</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Moka_Deivos"]/genes</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Moka_Deivos"]/genes</xpath>
+			<value>
+				<li>VRE_ProgressiveAttunement</li>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>

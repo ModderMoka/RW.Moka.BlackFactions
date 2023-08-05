@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--======================================================================================-->
+
+  <TraderKindDef>
+    <defName>Caravan_Psy_ShamanMerchant</defName>
+    <label>psyonic shaman merchant</label>
+    <stockGenerators>
+      
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>750~1200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Pemmican</thingDef>
+        <countRange>150~300</countRange>
+      </li>
+
+      <!-- Drugs -->
+
+      <li MayRequire="xrushha.EldersFaction" Class="StockGenerator_Tag">
+        <tradeTag>AnimaDrug</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>30~40</countRange>
+      </li>
+	  
+      <li MayRequire="xrushha.EldersFaction" Class="StockGenerator_Tag">
+        <tradeTag>Sac</tradeTag>
+        <thingDefCountRange>1</thingDefCountRange>
+        <countRange>1</countRange>
+      </li>
+
+      <!-- Techprints -->
+      <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>1</count>
+            <chance>1</chance>
+          </li>
+        </countChances>
+      </li>
+      
+      <!-- Weapons -->
+      <!-- none -->
+      
+      <!-- Apparel -->
+      <li MayRequire="xrushha.AnimaGear" Class="StockGenerator_Tag">
+        <tradeTag>AnimaApparel</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+      <!-- none -->
+
+      <!-- Implants -->
+      <li MayRequire="Seti.Victor.AnimaBodies" Class="StockGenerator_Tag">
+        <tradeTag>AnimaBody</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>3~4</countRange>
+      </li>
+      <!-- none -->
+
+      <!-- Buildings -->
+      <!-- none -->
+
+      <!-- Exotic -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>3~3</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+
+      <!-- Slaves -->
+      <!-- none -->
+      
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+        <tradeTagsSell>
+          <li>AnimalFarm</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>1~2</kindCountRange>
+        <countRange>3~4</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

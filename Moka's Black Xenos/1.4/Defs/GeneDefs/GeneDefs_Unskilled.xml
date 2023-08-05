@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef>
+		<defName>Moka_UselessDumb</defName>
+		<label>unskilled dumb</label>
+		<description>This pawn is too good for dumb labor and can't haul, rearm, refuel, load, cremate, or clean.</description>
+		<iconPath>UI/GeneIcons/DisabledDumbL</iconPath>
+		<displayCategory>Aptitudes</displayCategory>
+		<displayOrderInCategory>500</displayOrderInCategory> 
+		<disabledWorkTags>
+			<li>ManualDumb</li>
+		</disabledWorkTags>
+		<biostatMet>2</biostatMet>
+		<symbolPack>
+		  <wholeNameSymbols>
+			<li><symbol>useless</symbol></li>
+		  </wholeNameSymbols>
+		  <prefixSymbols>
+			<li>
+			  <symbol>dumb</symbol>
+			  <weight>2</weight>
+			</li>
+			<li><symbol>spoilt</symbol></li>
+		  </prefixSymbols>
+		  <suffixSymbols>
+			<li><symbol>work</symbol></li>
+		  </suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_UselessSkilled</defName>
+		<label>unskilled skilled</label>
+		<description>This pawn is not very skilled at anything beyond moving bricks. They can work better and harder to learn the skills available to them, but they are genetically incapable of brewing, butchering, cooking, building, mining, planting, crafting, smithing, tailoring among other failed aspirations.</description>
+		<iconPath>UI/GeneIcons/DisabledSkilledL</iconPath>
+		<displayCategory>Aptitudes</displayCategory>
+		<displayOrderInCategory>500</displayOrderInCategory> 
+		<disabledWorkTags>
+			<li>ManualSkilled</li>
+		</disabledWorkTags>
+		<biostatMet>2</biostatMet>
+		<symbolPack>
+		  <wholeNameSymbols>
+			<li><symbol>useless</symbol></li>
+			<li><symbol>skillless</symbol></li>
+		  </wholeNameSymbols>
+		  <prefixSymbols>
+			<li>
+			  <symbol>dumb</symbol>
+			  <weight>2</weight>
+			</li>
+		  </prefixSymbols>
+		  <suffixSymbols>
+			<li><symbol>work</symbol></li>
+		  </suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+ </Defs>

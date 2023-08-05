@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="LoxlanderBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>LoxlanderCivil</defaultFactionType>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <invNutrition>2.55</invNutrition>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="MechanitorBase">
+    <defName>Loxlander_MechRaider</defName>
+    <label>mechanitor raider</label>
+    <isFighter>true</isFighter>
+    <gearHealthRange>1~1</gearHealthRange>
+    <defaultFactionType Inherit="False" />
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>12~20</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="MechanitorBase">
+    <defName>Loxlander_MechTrader</defName>
+    <label>mechanitor trader</label>
+    <trader>true</trader>
+    <isFighter>false</isFighter>
+    <gearHealthRange>1~1</gearHealthRange>
+    <defaultFactionType Inherit="False" />
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>12~20</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="LoxlanderBase" Name="CouncilmanBase">
+    <defName>Loxlander_Leader</defName>
+    <label>head loxlander</label>
+    <combatPower>65</combatPower>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>30</minGenerationAge>
+    <isFighter>false</isFighter>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>400~400</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <apparelMoney>1200~2500</apparelMoney>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_BowlerHat</li>
+    </apparelRequired>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>600~1500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>5~9</initialWillRange>
+    <initialResistanceRange>11~15</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>

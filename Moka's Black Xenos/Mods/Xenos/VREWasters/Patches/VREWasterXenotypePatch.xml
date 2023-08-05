@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/XenotypeDef[defName="Moka_Toxcurl"]/genes</xpath>
+		<value>
+			<li>VREW_Mutation_Randomizer</li>
+			<li>VRE_Instability_Nominal</li>
+			<li>VRE_Instability_Progressive</li>
+			<li>VRE_GauntBody</li>
+			<li>VRE_ToxAbsorption</li>
+		</value>
+	</Operation>
+	
+</Patch>

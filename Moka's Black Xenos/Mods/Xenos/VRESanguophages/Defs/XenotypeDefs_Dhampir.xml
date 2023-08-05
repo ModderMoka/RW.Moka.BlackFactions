@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeDef>
+		<defName>Moka_Dhampir</defName>
+		<label>dhampir</label>
+		<description>Where most Sanguophage's stand out by virtue of their physical appearances, Dhampir were made to blend in. Whether by accident of birth, willing espionage or even an attempt at redemption, the full origin of Dhampir is not known, but their influence is felt around the Rim. They have been responsible for everything from murder, to pain, and even to the end of empires and civilizations.</description>
+		<descriptionShort>Dhampir are ageless, deathless super-humans powered by archotech-created archites in the bloodstream. They are known for their stealth and ability to pass somewhat undetected with very few of the more commonly known telltale signs of infection.</descriptionShort>
+		<iconPath>UI/Xenotypes/DhampirIcon</iconPath>
+		<soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
+		<generateWithXenogermReplicatingHediffChance>0.5</generateWithXenogermReplicatingHediffChance>
+		<xenogermReplicatingDurationLeftDaysRange>0.1~140</xenogermReplicatingDurationLeftDaysRange>
+		<combatPowerFactor>2.5</combatPowerFactor>
+
+		<genes>
+			
+			<li>Ageless</li>
+			<li>ArchiteMetabolism</li>
+			<li>Deathless</li>
+			<li>XenogermReimplanter</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			
+			<li>Hemogenic</li>
+			<li>VRE_LowHemogenDrain</li>
+			<li>Bloodfeeder</li>
+			<li>Coagulate</li>
+			<li>Deathrest</li>
+			<li>PiercingSpine</li>
+			<li>WoundHealing_Fast</li>
+			<li>VRE_Hemophiliac</li>
+			<li>PsychicAbility_Extreme</li>
+			<li>ToxResist_Total</li>
+			<li>UVSensitivity_Mild</li>
+			<li>FireWeakness</li>
+			<li>FireTerror</li>
+			<li>Aggression_DeadCalm</li>
+			<li>MeleeDamage_Strong</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
+		
+			<li>Hair_Moka_AfroTexture</li>
+			<li>Moka_HairColor_SangBloody</li>
+			<li>Moka_HairColor_DarkSangBloody</li>
+			<li>Moka_HairColor_Bloody</li>
+			<li>Moka_HairColor_PaleBloody</li>
+			<li>Moka_HairColor_RichBloody</li>
+			
+			<li>Moka_Brown</li>
+			<li>Moka_Caramel</li>
+			<li>Moka_Chestnut</li>
+			<li>Moka_Coconut</li>
+			<li>Moka_Dark_Gold</li>
+			<li>Moka_Light_Brown</li>
+			<li>Moka_Peach</li>
+			<li>Moka_Sunrise</li>
+			<li>Moka_Tanned</li>
+			<li>Moka_Yellowish_Brown</li>
+			<li>Moka_Bole</li>
+			<li>Moka_Brown_Coffee</li>
+			<li>Moka_Burnt_Brown</li>
+			<li>Moka_Burnt_Umber</li>
+			<li>Moka_Dark_Brown</li>
+			<li>Moka_Dark_Olive</li>
+			<li>Moka_Liver_Brown</li>
+			<li>Moka_Reddish_Brown</li>
+			<li>Moka_Dark_Reddish_Brown</li>
+			<li>Moka_Royal_Brown</li>
+			<li>DarkVision</li>
+			<li>VRE_Talons</li>
+			<li>AptitudeStrong_Shooting</li>
+			<li>AptitudeTerrible_Plants</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeStrong_Medicine</li>
+			<li>AptitudeStrong_Social</li>
+			<li>AptitudeRemarkable_Intellectual</li>
+		</genes>
+		
+	</XenotypeDef>
+</Defs>
